@@ -20,11 +20,16 @@ function GamePage() {
 
     return (
         <div className='main-container'>
-            <div className='upper-container'>
-                <h2>Senior Career</h2>
-                <h2>Player #{current + 1}</h2>
-                <h2>POINTS: {points}</h2>
-            </div>
+            {
+                !finish? <div className='upper-container'>
+                            <h2>Senior Career</h2>
+                            <h2>Player #{current + 1}</h2>
+                            <h2>POINTS: {points}</h2>
+                        </div>
+                        :
+                        null
+            }
+            
             {
                 finish? <div className='final-message'><h1>CONGRATS!! YOUR SCORE IS {points}</h1></div>:(
                     <>
