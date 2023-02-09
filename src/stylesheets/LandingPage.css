@@ -1,0 +1,15 @@
+
+.landing{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 150px;
+}
+
+.ball{
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.ball:hover{
+    color: red;
+}
